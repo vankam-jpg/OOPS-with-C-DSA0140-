@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	string a,b;
+	cout<<"enter the user name=";
+	cin>>a;
+	cout<<"re enter the user name=";
+	cin>>b;
+	if(a==b)
+	cout<<"user name is valid";
+	else
+	cout<<"user name is invalid";
+	return 0;
+}
+
+output:
+enter the user name=saveetha@123
+re enter the user name=saveetha@123
+user name is valid
+--------------------------------
