@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	string a,b;
+	cout<<"enter the string:";
+	cin>>a;
+	for(int i=a.size()-1;i>=0;i--)
+	{
+		b=b+a[i];
+	}
+	if(a==b)
+	cout<<"the string is palindrome";
+	else
+	cout<<"the string is not palindrome";
+	return 0;
+}
+
+output:
+enter the string:madam
+the string is palindrime
