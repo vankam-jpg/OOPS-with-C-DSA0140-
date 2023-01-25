@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int regno,m1,m2,m3,sum,avg,n;
+	char name;
+	cout<<"enter the no of students";
+	cin>>n;
+	cout<<"enter the reg number";
+	cin>>regno;
+	cout<<"enter the marks1";
+	cin>>m1;
+	cout<<"enter the marks2";
+	cin>>m2;
+	cout<<"enter the marks3";
+	cin>>m3;
+	sum=m1+m2+m3;
+	avg=sum/2;
+	cout<<"the avg marks of 10  students is"<<avg;
+	if(avg>=90)
+	cout<<"grade is S";
+	if(avg>=80 && avg<90)
+	cout<<"grade is A";
+	if(avg>=70 && avg<80)
+	cout<<"grade is B";
+	if(avg>=60 && avg<70)
+	cout<<"grade is C";
+	if(avg>=50 && avg<60)
+	cout<<"grade is D";
+	if(avg<=50)
+	cout<<"grade is F";
+	return 0;
+}
