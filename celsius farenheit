@@ -1,0 +1,17 @@
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+float celsius(float N)
+{
+	return ((N * 9.0 / 5.0) + 32.0);
+}
+int main()
+{
+	float N;
+	cout<<"enter the temperature:";
+	cin>>N;
+	cout<<"temperature in farenheit is:";
+	cout << celsius(N);
+	return 0;
+}
