@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+class add
+{
+   private:
+      int n1,n2;
+   public:
+      int sum;
+      void input(){
+      	cout<<"enter the first number:";
+      	cin>>n1;
+      	cout<<"enter the second number:";
+      	cin>>n2;
+	  }
+      void calculation() {
+        sum=n1+n2;
+        cout<<"the sum of two numbers is:"<<sum;
+      }
+};
+
+int main(){
+   add a;
+   a.input();
+   a.calculation();
+   return 0;
+}
