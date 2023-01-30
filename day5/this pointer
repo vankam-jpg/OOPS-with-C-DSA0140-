@@ -1,0 +1,20 @@
+#include <iostream>  
+using namespace std;  
+class pointer {  
+   public:  
+       int n; 
+       pointer(int n)    
+        {    
+             this->n = n;   
+        }    
+       void display()    
+        {    
+            cout<<"n is-> "<<n<<"  "<<endl;    
+        }    
+};  
+int main(void) {  
+    pointer p1 =pointer(101);
+    p1.display();    
+    
+    return 0;  
+}  
