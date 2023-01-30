@@ -1,0 +1,60 @@
+#include<iostream>
+using namespace std;
+class Circle
+{
+    protected:
+        float radius ;          
+    public:
+        void input()
+        {
+            cout << " Enter the radius of circle: ";
+			cin >> radius ;
+        }
+        void display()
+        {
+            cout << " The area of circle: " << (3.14 * radius*radius) ;
+        }
+};
+
+class Rectangle
+{
+    protected:
+        float length, breadth ;
+    public:
+        void input2()
+        {
+            cout << "\t Enter the length of rectangle: ";
+			 cin >> length ;
+            cout << "\t Enter the breadth of rectangle : " ;
+			 cin >> breadth ;
+        }
+        void display2()
+        {
+            cout << "\t The area of recatange: " << (length * breadth);
+        }
+};
+
+
+class Cylinder : public Circle, public Rectangle {
+    public:
+        void volume()
+        {
+            cout << "\t The volume of the cylinder is: "<< (3.14* radius*radius*length) ;
+        }
+};
+
+
+int main()
+{
+    Circle c;
+    c.input( );
+    c.display( );
+    Rectangle r ;
+    r.input2( );
+    r.display2( );
+    Cylinder cy ;
+    cy.input( );
+    cy.input2( );
+    cy.volume( );
+return 0;
+}
