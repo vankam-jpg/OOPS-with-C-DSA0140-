@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+
+class area
+{
+int l,b;
+public:
+void input();
+void display();
+void calculation();
+};
+void area::input()
+{
+cout << "Enter length of rectangle : ";
+cin >> l;
+cout << "Enter breath of rectangle : ";
+cin >> b;
+
+}
+void area::display()
+{
+cout << "\nlength" << l;
+cout << "\nbreadth"<<b;
+}
+
+void area::calculation()
+{
+	int a;
+	a=l*b;
+	cout<<"\narea of the rectangle is:";
+	cout<<a;
+}
+
+int main()
+{
+area a;
+a.input();
+a.display();
+a.calculation();
+return 0;
+}
